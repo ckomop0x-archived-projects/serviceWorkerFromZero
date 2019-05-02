@@ -5,7 +5,6 @@ self.addEventListener("install", () => {
 })
 
 self.addEventListener("fetch", event => {
-  // console.log(event)
   console.log('event.request.url', event.request.url)
   // fetch(event.request.url).then(result => console.log('fetch(event.request.url', result))
   event.respondWith(fetch(event.request.url))
