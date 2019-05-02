@@ -1,5 +1,9 @@
 // console.log('service Worker self', self);
-self.skipWaiting();
+// self.skipWaiting();
+
+self.addEventListener("activate", event => {
+  event.waitUntil(clients.claim())
+})
 
 self.addEventListener("fetch", event => {
   console.log(event.request.url)
