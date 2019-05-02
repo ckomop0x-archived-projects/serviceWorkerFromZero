@@ -1,4 +1,6 @@
-console.log('service Worker self', self);
+// console.log('service Worker self', self);
+
+
 
 self.addEventListener("install", () => {
   console.log("new SW installed")
