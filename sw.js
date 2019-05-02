@@ -2,8 +2,9 @@
 self.skipWaiting();
 
 self.addEventListener("fetch", event => {
-  throw Error("error in fetch handler");
-  event.respondWith(fetch(event.request.url));
+  return 'hello workie';
+  // throw Error("error in fetch handler");
+  // event.respondWith(fetch(event.request.url));
 })
 
 self.addEventListener("install", () => {
