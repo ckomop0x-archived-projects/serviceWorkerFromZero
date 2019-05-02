@@ -1,8 +1,8 @@
-const fetchPolifyll = require('whatwg-fetch');
-
-if (!window.fetch) {
-  fetch = fetchPolifyll;
-}
+// const fetchPolifyll = require('whatwg-fetch');
+//
+// if (!window.fetch) {
+//   fetch = fetchPolifyll;
+// }
 
 onmessage = function(e) {
   console.log('Worker: Test fetch');
