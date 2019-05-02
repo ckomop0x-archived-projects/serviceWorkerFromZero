@@ -6,7 +6,7 @@
 
 onmessage = function(e) {
   console.log('Worker: Test fetch');
-  fetch('https://api.github.com')
+  fetch('https://api.github.com/ckomop0x')
     .then(function(response) {
       return response.json()
     }).then(function(json) {
