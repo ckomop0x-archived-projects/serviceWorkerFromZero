@@ -2,7 +2,8 @@
 self.skipWaiting();
 
 self.addEventListener("fetch", event => {
-  return 'hello workie';
+  console.log(event.request.url)
+  // return 'hello workie';
   // throw Error("error in fetch handler");
   // event.respondWith(fetch(event.request.url));
 })
